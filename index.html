@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC221 Web Pages Project</title>
+<style>
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f7fb;
+        color: #243447;
+    }
+
+    header {
+        background: linear-gradient(135deg, #283b52, #4c8ac9);
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+    }
+
+    header h1 {
+        margin: 0 0 12px;
+        font-size: 44px;
+    }
+
+    header p {
+        margin: 0;
+        font-size: 19px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .intro {
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 28px;
+        text-align: center;
+        box-shadow: 0 5px 18px rgba(0,0,0,.08);
+    }
+
+    .intro h2 {
+        color: #36566f;
+        margin-top: 0;
+    }
+
+    .pages {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 5px 18px rgba(0,0,0,.08);
+        text-align: center;
+    }
+
+    .card h2 {
+        color: #36566f;
+        margin-top: 0;
+    }
+
+    .card p {
+        line-height: 1.6;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 12px 22px;
+        border-radius: 25px;
+        background: #36566f;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        opacity: 0.85;
+    }
+
+    footer {
+        text-align: center;
+        padding: 35px 20px;
+        color: #68727c;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSC221 Web Pages Project</h1>
+    <p>Family and Personal Web Pages</p>
+</header>
+
+<main class="container">
+
+    <section class="intro">
+        <h2>Welcome</h2>
+        <p>
+            Welcome to my CSC221 web page project. This site contains two
+            webpages created for the Web Page assignment: a fictional family
+            webpage and a personal student webpage.
+        </p>
+    </section>
+
+    <section class="pages">
+
+        <div class="card">
+            <h2>Family Web Page</h2>
+            <p>
+                Meet the Carter family, including the parents, three children,
+                their pets, and highlights from their most recent family vacation.
+            </p>
+            <a class="button" href="family.html">Visit Family Page</a>
+        </div>
+
+        <div class="card">
+            <h2>Personal Web Page</h2>
+            <p>
+                Learn about my education, technology interests, hobbies,
+                future education plans, and career goals.
+            </p>
+            <a class="button" href="personal.html">Visit Personal Page</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 • CSC221 Web Pages Project
+</footer>
+
+</body>
+</html>
